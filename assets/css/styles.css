@@ -1,1 +1,41 @@
+/*Stylos de Etiquetas*/
+
+/*Estilos Generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("../img/maquina_industrial.jpg") no-repeat center center fixed;
+  background-size: cover;
+  justify-content: space-between;
+  /*
+    `no-repeat` -> Evita que la imagen se repita
+    `center center` -> coloca la imagen en el centro horizontal como vertical de la paginas
+    `fixed` -> Hace que la imagen de fondo permanezca fija en su posicion mientras se desplaza la pagina 
+    */
+}
 /*Stylos del archivo home.php*/
+#Bienvenido {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#ultimas-Noticias {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nuevo-items {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(50% - 20px);
+}
