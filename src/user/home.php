@@ -1,15 +1,3 @@
-<?php
-session_start();
-
-// Verificar si el usuario está autenticado
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-header('Location: login.php');
-exit;
-}
-
-// Verificar el rol del usuario
-$role = $_SESSION['role'];
-?>
 <!DOCTYPE html>
 <html>
 
@@ -21,23 +9,24 @@ $role = $_SESSION['role'];
 </head>
 
 <body>
+    <?php include '../../templates/header.php'?>
     <main>
         <section id="Bienvenido">
             <h2>¡Confecciones y estampados personalizados a tu alcance!</h2>
             <p>Solicita tu presupuesto gratuito hoy mismo y descubre cómo podemos ayudarte a crear las prendas que
                 siempre has deseado.</p>
         </section>
-        <section id="content">
-            <div id="about">
+        <section id="contenido-home">
+            <div id="acerca-de">
                 <h2>Sobre Nosotros</h2>
                 <p>Somos una empresa dedicada a la confección y estampado de prendas de alta calidad.</p>
-                <img src="../../assets/img/img1.jpg" alt="Sobre Nosotros" class="about-image" />
+                <img src="../../assets/img/img1.jpg" alt="Sobre Nosotros" class="acerca-de-image" />
             </div>
         </section>
         <section id="ultimas-Noticias">
             <h2>Últimas Noticias</h2>
             <div class="news-container">
-                <div class="news-item">
+                <div class="nuevo-items">
                     <h3>Nueva Colección Primavera-Verano</h3>
                     <p>Descubre nuestra última colección de prendas estampadas para la temporada.</p>
                     <a href="../src/catalogo.php">Catalogo</a>

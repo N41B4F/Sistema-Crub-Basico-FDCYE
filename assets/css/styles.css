@@ -1,3 +1,4 @@
+/*Stylos Pagina Adaptativa*/
 /*Stylos de Etiquetas*/
 
 /*Estilos Generales*/
@@ -38,4 +39,59 @@ body {
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 0 0 calc(50% - 20px);
+}
+.nuevo-items h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.nuevo-items p {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.nuevo-items a:hover {
+  background-color: #ccc;
+}
+
+.acerca-de-image {
+  margin: 20px 0;
+  border-radius: 10px;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*Stylos del archivo Header.php*/
+
+header {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.5em;
+  background-color: #333;
+  color: #fff;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+header nav ul li {
+  margin: 0 10 px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Definimos una transicion suave para los cambios del color del fondo y el color del texto de los enlaces, con una duracion de 0.3 segundos.
+  Esto crea un efecto visual cuando interactuen con los enlaces ->  ejemplo (cuando pasa el ratón sobre ellos).*/
+}
+
+header nav ul li a:hover {
+  background-color: #575757;
 }
