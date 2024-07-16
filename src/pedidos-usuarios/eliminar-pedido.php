@@ -11,7 +11,7 @@ $id = $_GET['id'];
 $usuario_id = $_SESSION['id'];
 
 $sql = "DELETE FROM pedidos WHERE id = ? AND usuario_id = ?";
-$stmt = $conn->prepare($sql);
+$stmt = $connexion->prepare($sql);
 $stmt->bind_param("ii", $id, $usuario_id);
 $stmt->execute();
 
