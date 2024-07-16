@@ -52,4 +52,16 @@ CREATE TABLE contactos (
     mensaje TEXT NOT NULL,
     creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE pedidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    producto VARCHAR(50) NOT NULL,
+    cantidad INT NOT NULL,
+    direccion_envio TEXT NOT NULL,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+);
 ```
