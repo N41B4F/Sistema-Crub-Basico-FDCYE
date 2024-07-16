@@ -63,5 +63,4 @@ CREATE TABLE pedidos (
     creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-);
 ```

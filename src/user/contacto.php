@@ -10,8 +10,9 @@
 </head>
 
 <body>
+    <?php include '../../templates/header.php'; ?>
     <main>
-        <?php include '../../templates/header.php'; ?>
+
         <section>
             <h2>Formulario de Contacto</h2>
             <?php
