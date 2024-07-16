@@ -918,3 +918,93 @@ p {
 .producto button:hover {
   background-color: #555;
 }
+/* General Styles */
+/* Styles */
+/* adaptabilidad */
+/* Responsive*/
+@media (max-width: 1024px) {
+  .productos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .productos-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  header nav ul {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header nav ul li {
+    margin: 5px;
+  }
+
+  form input,
+  form textarea {
+    padding: 8px;
+  }
+
+  form input[type="submit"] {
+    padding: 10px;
+  }
+}
+
+.producto {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: cover;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+}

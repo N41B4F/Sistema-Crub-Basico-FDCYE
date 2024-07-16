@@ -15,7 +15,7 @@
                 <li><a href="../../src/sistema-crub/Lista-Usuarios.php">Gestión de Usuarios</a></li>
                 <?php endif; ?>
                 <?php else: ?>
-                <li><a href="../../src/sistema-crud/Crear-Usuarios.php">Registro</a></li>
+                <li><a href="../../src\sistema-crub\Crear-Usuarios.php">Registro</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
